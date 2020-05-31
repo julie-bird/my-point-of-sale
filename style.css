@@ -48,7 +48,7 @@ a {
 
 .items {
     border: 1px solid black;
-    font-size: 22px;
+    font-size: 30px;
     width: 85%;
     margin-bottom: 30px;
     text-align: center;
@@ -58,31 +58,27 @@ a {
     text-shadow: 1px 1px 1px black;
 }
 .backgrounds {
-  background-image: url(./POS_Assets/Forest.jpg);
+  background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px
 }
 .extensions{
-  margin-top: 25px;
-  background-image: url(./POS_Assets/EXTRA.jpg);
+  background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-position: 0px -70px;
 }
-
 .products {
-  margin-top: 25px;
-  background-image: url(./POS_Assets/fakeyou.jpg);
+  background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0px -140px;
 }
-
 .merch {
-  margin-top: 25px;
-  background-image: url(./POS_Assets/ArthurFist.jpg);
+  background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0px -210px;
 }
 
 .footer {
@@ -135,51 +131,11 @@ a {
   right: 1px;
 }
 
-.bpop {
-  background-color: rgba(0,0,0,.8);
-  /* possibly need to change to fixed, problem with absolute and relative??  */
+.item-popup {
+  background-color: white;
   position: absolute;
   display: none;
-  height: 80vh;
-  width: 85vw;
-  z-index: 20;
-  left: 50%;
-  top: 57%;
-  transform: translate(-50%,-50%);
-  border-radius: 30px;
-}
-.epop {
-  background-color: rgba(0,0,0,.8);
-  /* possibly need to change to fixed, problem with absolute and relative??  */
-  position: absolute;
-  display: none;
-  height: 80vh;
-  width: 85vw;
-  z-index: 20;
-  left: 50%;
-  top: 57%;
-  transform: translate(-50%,-50%);
-  border-radius: 30px;
-}
-.ppop {
-  background-color: rgba(0,0,0,.8);
-  /* possibly need to change to fixed, problem with absolute and relative??  */
-  position: absolute;
-  display: none;
-  height: 80vh;
-  width: 85vw;
-  z-index: 20;
-  left: 50%;
-  top: 57%;
-  transform: translate(-50%,-50%);
-  border-radius: 30px;
-}
-.mpop {
-  background-color: rgba(0,0,0,.8);
-  /* possibly need to change to fixed, problem with absolute and relative??  */
-  position: absolute;
-  display: none;
-  height: 80vh;
+  /* height: 80vh; */
   width: 85vw;
   z-index: 20;
   left: 50%;
@@ -189,7 +145,6 @@ a {
 }
 .rpop {
   background-color: rgb(0, 0, 0);
-  /* possibly need to change to fixed, problem with absolute and relative??  */
   position: absolute;
   display: none;
   height: 100%;
