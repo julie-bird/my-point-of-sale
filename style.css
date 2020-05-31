@@ -1,0 +1,434 @@
+/* Default Resets */
+
+body, h1, h2 {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* Specifics */
+.full-body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    background-color: #E8C69A;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 30px;
+}
+.title {
+  font-size: 60px;
+  color: #676E60;
+}
+.subtitle{
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+.fas {
+  color: #DF8C71;
+}
+.pos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 1;
+}
+
+.items {
+    border: 1px solid black;
+    font-size: 22px;
+    width: 85%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.backgrounds {
+  background-image: url(./POS_Assets/Forest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px
+}
+.extensions{
+  margin-top: 25px;
+  background-image: url(./POS_Assets/EXTRA.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.products {
+  margin-top: 25px;
+  background-image: url(./POS_Assets/fakeyou.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.merch {
+  margin-top: 25px;
+  background-image: url(./POS_Assets/ArthurFist.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 85vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+.cart {
+  font-size: 20px;
+  color: rgb(56, 56, 56);
+}
+.cart-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 21;
+  
+}
+
+.checkout-deets {
+  width: 60%;
+  color: white;
+  flex-direction: column;
+}
+.about{
+  font-size: 20px;
+  color: rgb(56, 56, 56);
+}
+.exit {
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  right: 1px;
+}
+
+.bpop {
+  background-color: rgba(0,0,0,.8);
+  /* possibly need to change to fixed, problem with absolute and relative??  */
+  position: absolute;
+  display: none;
+  height: 80vh;
+  width: 85vw;
+  z-index: 20;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+}
+.epop {
+  background-color: rgba(0,0,0,.8);
+  /* possibly need to change to fixed, problem with absolute and relative??  */
+  position: absolute;
+  display: none;
+  height: 80vh;
+  width: 85vw;
+  z-index: 20;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+}
+.ppop {
+  background-color: rgba(0,0,0,.8);
+  /* possibly need to change to fixed, problem with absolute and relative??  */
+  position: absolute;
+  display: none;
+  height: 80vh;
+  width: 85vw;
+  z-index: 20;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+}
+.mpop {
+  background-color: rgba(0,0,0,.8);
+  /* possibly need to change to fixed, problem with absolute and relative??  */
+  position: absolute;
+  display: none;
+  height: 80vh;
+  width: 85vw;
+  z-index: 20;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+}
+.rpop {
+  background-color: rgb(0, 0, 0);
+  /* possibly need to change to fixed, problem with absolute and relative??  */
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 90vw;
+  z-index: 20;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+}
+.receiptTitle{
+  position: fixed;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.receiptItems{
+  display: flex;
+  position: relative;
+  top: 25px;
+  left: 10px;
+  justify-content: space-between;
+}
+.column-style {
+   display: flex;
+   flex-direction: column;
+   width: 83vw;
+   height: 70vh;
+   padding: auto;
+ }
+.checkout-style{
+  background-color: rgba(0, 0, 0, 0.8);
+  /* possibly need to change to fixed, problem with absolute and relative??  */
+  display: flex;
+  position: absolute;
+  height: 80vh;
+  width: 85vw;
+  z-index: 20;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%,-50%);
+  border-radius: 30px;
+  
+  
+ }
+ .cartItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+.payment-method {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+ .cash-form {
+  display: none;
+  justify-content: center;
+   align-items: flex-start;
+   width: 90%;
+   flex-wrap: wrap;
+   flex-direction: column;
+ }
+
+ .credit-form {
+   display: none;
+   justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
+ .total_subtotal {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+ }
+.info {
+   color: white;
+   text-align: center;
+}
+
+.item-title {
+   font-size: 20px;
+   margin: 3px;
+}
+
+.product-info {
+   font-size: 15px;
+   margin: 1px;
+}
+
+.side-by-side {
+   display: flex;
+   margin: 20px;
+}
+
+.image {
+  width: 150px;
+  height: auto;
+  /* ^ fix this please! */
+  margin: 7px;
+}
+.credit-paid{
+  position: fixed;
+    bottom: .5px;
+    margin-bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.subtotal{
+  margin-top: 1px;
+    margin-bottom: 1px;
+}
+.tax{
+  margin-top: 1px;
+    margin-bottom: 1px;
+}
+.total{
+  margin-top: 1px;
+}
+.r-subtotal{
+  margin-top: 1px;
+    margin-bottom: 1px;
+}
+.r-tax{
+  margin-top: 1px;
+    margin-bottom: 1px;
+}
+.r-total{
+  margin-top: 1px;
+    margin-bottom: 1px;
+}
+.amount-taken{
+  margin-top: 1px;
+    margin-bottom: 1px;
+}
+.change{
+  margin-top: 1px;
+}
+
+@media only screen and (min-width:768px) {
+    body {
+        background-color: #f8f8f8;
+    }
+    .full-body {
+        flex-direction: row;
+    }
+    .header {
+        flex: 1;
+        max-width: 200%;
+        padding-left: 0px;
+        /* background-image: none; */
+        /* background-position: 0px;
+        background-size: fill; */
+        left: 0;
+        transform: translateX(0);
+        background-image: url("./POS_Assets/ZoomLogo.png");
+        background-size: fill;
+        background-repeat: no-repeat;
+        float: left;
+        background-position: center;
+    }
+    .head {
+        padding-left: 100px;
+    }
+    .title {
+        padding-top: 75px;
+        font-size: 120px;
+    }
+    .subtitle {
+        font-size: 40px;
+    }
+    .pos {
+        flex: 1;
+        max-width: 50vw;
+        height: 100vh;
+        background-color: #c8ddff;
+       justify-content: center;
+       padding: 100px;
+        /* padding: 20px 0; */
+    }
+    .column-style {
+      display: flex;
+      flex-direction: column;
+      width: 83vw;
+      height: 80vh;
+      padding: auto;
+    }
+    .receipt{
+      width: 100vw;
+      margin-right: 20px;
+    }
+   .side-by-side{
+     justify-content: space-evenly;
+     align-items: center;
+     margin: auto;
+     margin-left: 25%;
+   }
+   .info {
+    color: white;
+    text-align: left;
+   }
+    .footer {
+        /* display: block; */
+        justify-content: flex-end;
+       position: absolute;
+        width: 100vw;
+        left: 0;
+        transform: translateX(0);
+        z-index: 100;
+    }
+    .button {
+        margin-top: 40px;
+    }
+    .cart {
+        margin-right: 10vw;
+        margin-left: 40px;
+    }
+    .items {
+        margin-bottom: auto;
+        margin-top: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 44px;
+        min-width: 40vw;
+    }
+    .exit {
+      font-size: 20px;
+      color: white;
+      position: fixed;
+      right: 1px;
+      margin-top:1px;
+    }
+}
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>ZAP</title>
+</head>
+
+<body class="body">
+
+    <div class="full-body">
+        <header class="header">
+            <div class="title-head">
+                <h1 class="title head"><a href="#">Fillhouse</a></h1>
+                <h2 class="subtitle head">everything's coming up fillhouse</h2>
+            </div>
+            <div class="nav-bar">
+                <button class="about button"><a
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"><i
+                            class="fas fa-user"></i></a></button>
+                <button class="cart button"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </header>
+        <main class="pos">
+
+            <div class="backgrounds items">
+                <a class="background-popup" href="#">Backgrounds</a></div>
+            <div class="extensions items">
+                <a class="extensions-popup" href="#">Extensions</a></div>
+            <div class="products items">
+                <a class="products-popup" href="#">Products</a></div>
+            <div class="merch items">
+                <a class="merch-popup" href="#">Merch</a></div>
+        </main>
+        <div class="cart-container">
+            <div class="checkout-deets checkout-style">
+                <button class="exit button cexit"><i class="fas fa-times"></i></button>
+
+                <!-- payment method -->
+                <div class="payment-method">
+                    <button class="cash-button last">Pay Cash</button>
+                    <div class="cash">
+                        <form class="cash-form">
+                            <label for="cash-amount">Cash Amount</label>
+                            <input type="text" id="cash-amount" name="cash-amount">
+                            <button class="receipt-button cash-check">Checkout</button>
+                        </form>
+                    </div>
+                    <button class="credit-button last">Pay Credit</button>
+                    <div class="credit">
+                        <form class="credit-form">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number">
+                            <label for="expiration-date">Expiration Date</label>
+                            <input type="text" id="expiration-date">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv">
+                            <button class="receipt-button credit-check">Checkout</button>
+                        </form>
+                    </div>
+                    <!-- <button class="receipt-button last">Checkout</button> -->
+                </div>
+                <!-- Receipt -->
+                <div class="receiptBox">
+                    <div class="rpop">
+                        <div class="receipt column-style">
+                            <div class="total_subtotal">
+                                <h4 class="receiptTitle">Receipt</h4>
+                                <p class="r-subtotal">Subtotal: $0.00</p>
+                                <p class="r-tax">Tax: $0.00</p>
+                                <p class="r-total">Total: $0.00</p>
+                                <p class="amount-taken">Cash: $0.00</p>
+                                <p class="change">Change: $0.00</p>
+                                <!-- <p class="credit-card">Credit Card PAID</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total_subtotal">
+                    <p class="subtotal">Subtotal: $0.00</p>
+                    <p class="tax">Tax: $0.00</p>
+                    <p class="total">Total: $0.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="bpop">
+            <div class="column-style">
+                <!-- BUTTON -->
+                <button class="exit button bexit"><i class="fas fa-times"></i></button>
+                <!-- This ISNT fine -->
+                <div class="this-is-fine side-by-side">
+                    <img class="image" src="./POS_Assets/ThisIsFine.jpg" alt="">
+                    <div class="info">
+                        <h3 class="item-title"> This is Fine</h3>
+                        <p class="product-info">Show off how little you care that the world is falling apart with this
+                            hilarious
+                            background.</p>
+                        <p class="price product-info">$0.50</p>
+                        <button class="add-to-cart" data-title="This is Fine" data-info="Show off how little you care that the world is falling apart with this hilarious
+            background." data-price="0.50">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Tiger King -->
+                <div class="tiger-king side-by-side">
+                    <img class="image" src="./POS_Assets/TigerKing.jpg" alt="Joe Exotic with sweet tiger friend">
+                    <div class="info">
+                        <h3 class="item-title"> Tiger King</h3>
+                        <p class="product-info">Join your next meeting side-by-side with Joe Exotic himself</p>
+                        <p class="price product-info">$500.00</p>
+                        <button class="add-to-cart" data-title="Tiger King" data-info="Who doesn't want to be seen with the most royal, the most trashy, and the most
+            ridiculous man himself; JOE EXOTIC" data-price="500.00">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Simps -->
+                <div class="simps side-by-side">
+                    <img class="image" src="./POS_Assets/simps.jpg" alt="The Simpsons' Couch">
+                    <div class="info">
+                        <h3 class="item-title">Simpsons' Couch</h3>
+                        <p class="product-info">Inject yourself into one of the most iconic TV shows to ever exist.</p>
+                        <p class="price product-info">$50.00</p>
+                        <button class="add-to-cart" data-title="Simpsons' Couch"
+                            data-info="Inject yourself into one of the most iconic TV shows to ever exist."
+                            data-price="50.00">Add to
+                            Cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="epop">
+            <div class="column-style">
+                <button class="exit button eexit"><i class="fas fa-times"></i></button>
+                <div class="ronaEmoji side-by-side">
+                    <img class="image" src="./POS_Assets/RonaEmoji.png" alt="Rona">
+                    <div class="info">
+                        <h3 class="item-title">Rona Emoji</h3>
+                        <p class="product-info">Use this emoji when you spot another zoomer who is showing symptoms of
+                            COVID</p>
+                        <p class="price product-info">$3.00</p>
+                        <button class="add-to-cart" data-title="Rona Emoji" data-price="3.00"
+                            data-info="Use this emoji when you spot another zoomer who is showing symptoms of the RONA">Add
+                            to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <div class="sdPolice side-by-side">
+                    <img class="image" src="./POS_Assets/SocialDistanceEmoji.jpg" alt="SocialDistanceEmoji">
+                    <div class="info">
+                        <h3 class="item-title">Social Distance Police Emoji</h3>
+                        <p class="product-info">Use this emoji to immediately contact the authorities when you see
+                            someone not
+                            practicing social distancing</p>
+                        <p class="price product-info">$0.01</p>
+                        <button class="add-to-cart" data-title="Social Distancing Police Emoji" data-price="0.01"
+                            data-info="Want to rat out a zoomer you see that's not practicing social distancing? Use this
+            emoji to immediately contact the authorities">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="airhorn side-by-side">
+                    <img class="image" src="./POS_Assets/AirHornEntrance.png" alt="Airhorn">
+                    <div class="info">
+                        <h3 class="item-title">Airhorn Entrance</h3>
+                        <p class="product-info">Do you want to be the center of attention? Announce your arrival with an
+                            airhorn
+                            that blasts everyone's ears to bits</p>
+                        <p class="price product-info">$5,000.00</p>
+                        <button class="add-to-cart" data-title="Airhorn Entrance" data-price="5000.00" data-info="Do you want to be the center of attention? Do you think you deserve that? Seriously?
+            Ok then. Announce your arrival with an airhorn that blasts everyone's ears to bits">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ppop">
+            <div class="column-style">
+                <button class="exit button pexit"><i class="fas fa-times"></i></button>
+                <div class="fakeYou side-by-side">
+                    <img class="image" src="./POS_Assets/fakeyou.jpg" alt="FakeYou">
+                    <div class="info">
+                        <h3 class="item-title">Fake You Background</h3>
+                        <p class="product-info">Provide us with a picture of yourself and we'll return to you a custom
+                            "fake you"
+                            background</p>
+                        <p class="price product-info">$300.00</p>
+                        <button class="add-to-cart" data-title="Fake You Background" data-price="300.00" data-info="Provide us with a picture of yourself and we'll return to you a custom 'fake you'
+            background. Now no one will know whether or not you're in the meeting">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="webcam side-by-side">
+                    <img class="image" src="./POS_Assets/Webcam Product.jpg" alt="webcam">
+                    <div class="info">
+                        <h3 class="item-title">1080p Webcam</h3>
+                        <p class="product-info">With this HD 1080p webcam, everyone will be able to see your flawless
+                            (or terribly
+                            scarred) skin.</p>
+                        <p class="price product-info">$666.00</p>
+                        <button class="add-to-cart" data-title="1080p Webcam" data-price="666.00" data-info="With this HD 1080p webcam, everyone will be able to see your flawless (or terribly
+            scarred) skin. Be sure to floss before you utilize this bad boy!">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mpop">
+            <div class="column-style">
+                <button class="exit button mexit"><i class="fas fa-times"></i></button>
+                <div class="zoomShirt side-by-side">
+                    <img class="image" src="./POS_Assets/ZoomShirt.png" alt="ZoomShirt">
+                    <div class="info">
+                        <h3 class="item-title">Zoom Meeting Shirt</h3>
+                        <p class="product-info">Think you're funny? Think again if you actually want this shirt</p>
+                        <p class="price product-info">$10.00</p>
+                        <button class="add-to-cart" data-title="Zoom Meeting Shirt" data-price="10.00"
+                            data-info="Think you're funny? Think again if you actually want this shirt">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <div class="zoomShirt2 side-by-side">
+                    <img class="image" src="./POS_Assets/ZoomBoom.png" alt="ZoomShirt2">
+                    <div class="info">
+                        <h3 class="item-title">Boom Zoom Shirt</h3>
+                        <p class="product-info">Boom, boom, boom, boom, I want you in my Zoom.</p>
+                        <p class="price product-info">$25.00</p>
+                        <button class="add-to-cart" data-title="Boom Zoom Shirt" data-price="25.00"
+                            data-info="Boom, boom, boom, boom, I want you in my Zoom. Need I say more?">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/0f5174ed1d.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
