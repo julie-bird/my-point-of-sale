@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <title>ZAP</title>
+    <title>fillhouse</title>
 </head>
 
 <body class="body">
-
     <div class="full-body">
         <header class="header">
             <div class="title-head">
@@ -19,7 +18,7 @@
             </div>
             <div class="nav-bar">
                 <button class="about button"><a
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"><i
+                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO" target="_blank"><i
                             class="fas fa-user"></i></a></button>
                 <button class="cart button"><i class="fas fa-shopping-cart"></i></button>
             </div>
@@ -27,16 +26,17 @@
         <main class="pos">
 
             <div class="backgrounds items">
-                <a class="background-popup" href="#">Couches</a></div>
+                <a class="background-popup" href="#">couches</a></div>
             <div class="extensions items">
-                <a class="extensions-popup" href="#">Chairs</a></div>
+                <a class="extensions-popup" href="#">chairs</a></div>
             <div class="products items">
-                <a class="products-popup" href="#">Side Boards</a></div>
+                <a class="products-popup" href="#">side boards</a></div>
             <div class="merch items">
-                <a class="merch-popup" href="#">Tables</a></div>
+                <a class="merch-popup" href="#">tables</a></div>
         </main>
+        <!-- SHOPPING CART -->
         <div class="cart-container">
-            <div class="checkout-deets checkout-style">
+            <div class="checkout-deets item-popup">
                 <button class="exit button cexit"><i class="fas fa-times"></i></button>
 
                 <!-- payment method -->
@@ -61,7 +61,6 @@
                             <button class="receipt-button credit-check">Checkout</button>
                         </form>
                     </div>
-                    <!-- <button class="receipt-button last">Checkout</button> -->
                 </div>
                 <!-- Receipt -->
                 <div class="receiptBox">
@@ -88,204 +87,218 @@
             </div>
         </div>
         <!-- COUCHES -->
-        <div class="item-popup bpop">
-            <div class="column-style">
-                <button class="exit button bexit"><i class="fas fa-times"></i></button>
-                <!-- mossy green couch -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/couch1.jpg" alt="large green velvet couch">
-                    <div class="info">
-                        <h3 class="item-title"> mossy green couch</h3>
-                        <p class="product-info">lounge on this soft velvet couch that seems to come right out of your
-                            dreams.</p>
-                        <p class="price product-info">$5000.00</p>
-                        <button class="add-to-cart" data-title="mossy green couch" data-price="5000.00">Add to
-                            Cart</button>
+        <div class="popup-container bpop">
+            <div class="item-popup">
+                <div class="column-style">
+                    <button class="exit button bexit"><i class="fas fa-times"></i></button>
+                    <!-- mossy green couch -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/couch1.jpg" alt="large green velvet couch">
+                        <div class="info">
+                            <h3 class="item-title"> mossy green couch</h3>
+                            <p class="product-info">lounge on this soft velvet couch that seems to come right out of
+                                your
+                                dreams.</p>
+                            <p class="price product-info">$5000.00</p>
+                            <button class="add-to-cart last" data-title="mossy green couch" data-price="5000.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- wooden cabana couch -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/couch2.jpg" alt="gray couch with wood accents">
-                    <div class="info">
-                        <h3 class="item-title"> wooden accent couch</h3>
-                        <p class="product-info">a dark gray velvet couch with mid-century wooden accents</p>
-                        <p class="price product-info">$3000.00</p>
-                        <button class="add-to-cart" data-title="wooden accent couch" data-price="3000.00">Add to
-                            Cart</button>
+                    <!-- wooden cabana couch -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/couch2.jpg" alt="gray couch with wood accents">
+                        <div class="info">
+                            <h3 class="item-title"> wooden accent couch</h3>
+                            <p class="product-info">a dark gray velvet couch with mid-century wooden accents</p>
+                            <p class="price product-info">$3000.00</p>
+                            <button class="add-to-cart last" data-title="wooden accent couch" data-price="3000.00">Add
+                                to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- classic leather couch -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/couch3.jpg" alt="leather two seater couch">
-                    <div class="info">
-                        <h3 class="item-title">classic leather couch</h3>
-                        <p class="product-info">Inject yourself into one of the most iconic TV shows to ever exist.</p>
-                        <p class="price product-info">$2500.00</p>
-                        <button class="add-to-cart" data-title="classic leather couch" data-price="2500.00">Add to
-                            Cart</button>
+                    <!-- classic leather couch
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/couch3.jpg" alt="leather two seater couch">
+                        <div class="info">
+                            <h3 class="item-title">classic leather couch</h3>
+                            <p class="product-info">Inject yourself into one of the most iconic TV shows to ever exist.
+                            </p>
+                            <p class="price product-info">$2500.00</p>
+                            <button class="add-to-cart last" data-title="classic leather couch" data-price="2500.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- pink gemini couch -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/couch4.jpg" alt="double backed pick velvet couch">
-                    <div class="info">
-                        <h3 class="item-title">pink gemini couch</h3>
-                        <p class="product-info">the best couch for chatting with a good friend or enemy.</p>
-                        <p class="price product-info">$5500.00</p>
-                        <button class="add-to-cart" data-title="pink gemini couch" data-price="5500.00">Add to
-                            Cart</button>
-                    </div>
+                    pink gemini couch
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/couch4.jpg" alt="double backed pick velvet couch">
+                        <div class="info">
+                            <h3 class="item-title">pink gemini couch</h3>
+                            <p class="product-info">the best couch for chatting with a good friend or enemy.</p>
+                            <p class="price product-info">$5500.00</p>
+                            <button class="add-to-cart last" data-title="pink gemini couch" data-price="5500.00">Add to
+                                Cart</button>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <!-- CHAIRS -->
-        <div class="item-popup epop">
-            <div class="column-style">
-                <button class="exit button eexit"><i class="fas fa-times"></i></button>
-                <!-- pink cloud chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/chair1.jpg" alt="round pale pink chair">
-                    <div class="info">
-                        <h3 class="item-title">pink cloud chair</h3>
-                        <p class="product-info">these round pale pink chair are the epidome of sweetness</p>
-                        <p class="price product-info">$700.00</p>
-                        <button class="add-to-cart" data-title="pink cloud chair" data-price="700.00">Add to
-                            Cart</button>
+        <div class="popup-container epop">
+            <div class="item-popup">
+                <div class="column-style">
+                    <button class="exit button eexit"><i class="fas fa-times"></i></button>
+                    <!-- pink cloud chair -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/chair1.jpg" alt="round pale pink chair">
+                        <div class="info">
+                            <h3 class="item-title">pink cloud chair</h3>
+                            <p class="product-info">these round pale pink chair are the epidome of sweetness</p>
+                            <p class="price product-info">$700.00</p>
+                            <button class="add-to-cart last" data-title="pink cloud chair" data-price="700.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- leather bandage chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/chair2.jpg" alt="leather chair with silver metal hardware">
-                    <div class="info">
-                        <h3 class="item-title">leather bandage chair</h3>
-                        <p class="product-info">this simple classic leather chair will patch you right up</p>
-                        <p class="price product-info">$450.00</p>
-                        <button class="add-to-cart" data-title="leather bandage chair" data-price="450.00">Add to
-                            Cart</button>
+                    <!-- leather bandage chair -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/chair2.jpg" alt="leather chair with silver metal hardware">
+                        <div class="info">
+                            <h3 class="item-title">leather bandage chair</h3>
+                            <p class="product-info">this simple classic leather chair will patch you right up</p>
+                            <p class="price product-info">$450.00</p>
+                            <button class="add-to-cart last" data-title="leather bandage chair" data-price="450.00">Add
+                                to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- wooden chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/chair4.jpg" alt="caned wooden chair with leather seat">
-                    <div class="info">
-                        <h3 class="item-title">wooden chair</h3>
-                        <p class="product-info">this simple wooden chair will complete any room</p>
-                        <p class="price product-info">$250.00</p>
-                        <button class="add-to-cart" data-title="wooden chair" data-price="250.00">Add to Cart</button>
+                    <!-- wooden chair
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/chair4.jpg" alt="caned wooden chair with leather seat">
+                        <div class="info">
+                            <h3 class="item-title">wooden chair</h3>
+                            <p class="product-info">this simple wooden chair will complete any room</p>
+                            <p class="price product-info">$250.00</p>
+                            <button class="add-to-cart last" data-title="wooden chair" data-price="250.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- dreamy golden chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/chair5.jpg" alt="round golden 70s chair">
-                    <div class="info">
-                        <h3 class="item-title">dreamy golden chair</h3>
-                        <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
-                        <p class="price product-info">$650.00</p>
-                        <button class="add-to-cart" data-title="dreamy golden chair" data-price="650.00">Add to
-                            Cart</button>
-                    </div>
+                    dreamy golden chair
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/chair5.jpg" alt="round golden 70s chair">
+                        <div class="info">
+                            <h3 class="item-title">dreamy golden chair</h3>
+                            <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
+                            <p class="price product-info">$650.00</p>
+                            <button class="add-to-cart last" data-title="dreamy golden chair" data-price="650.00">Add to
+                                Cart</button>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <!-- SIDE BOARDS -->
-        <div class="item-popup ppop">
-            <div class="column-style">
-                <button class="exit button pexit"><i class="fas fa-times"></i></button>
-                <!-- dreamy golden chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table4.jpg" alt="round golden 70s chair">
-                    <div class="info">
-                        <h3 class="item-title">dreamy golden chair</h3>
-                        <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
-                        <p class="price product-info">$650.00</p>
-                        <button class="add-to-cart" data-title="dreamy golden chair" data-price="650.00">Add to
-                            Cart</button>
+        <div class="popup-container ppop">
+            <div class="item-popup">
+                <div class="column-style">
+                    <button class="exit button pexit"><i class="fas fa-times"></i></button>
+                    <!-- mid-mod sideboard -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/sideboard2.jpg" alt="round golden 70s chair">
+                        <div class="info">
+                            <h3 class="item-title">mid-mod sideboard</h3>
+                            <p class="product-info">this mid-mod sideboard will hold all your mid-mod dreams</p>
+                            <p class="price product-info">$1200.00</p>
+                            <button class="add-to-cart last" data-title="mid-mod sideboard" data-price="1200.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- dreamy golden chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table4.jpg" alt="round golden 70s chair">
-                    <div class="info">
-                        <h3 class="item-title">dreamy golden chair</h3>
-                        <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
-                        <p class="price product-info">$650.00</p>
-                        <button class="add-to-cart" data-title="dreamy golden chair" data-price="650.00">Add to
-                            Cart</button>
+                    <!-- running circles around sideboard -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/sideboard1.jpg" alt="round golden 70s chair">
+                        <div class="info">
+                            <h3 class="item-title">running circles around you sideboard</h3>
+                            <p class="product-info">keep up the pace with this groovy sideboard</p>
+                            <p class="price product-info">$1300.00</p>
+                            <button class="add-to-cart last" data-title="running circles around you sideboard"
+                                data-price="1300.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- dreamy golden chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table4.jpg" alt="round golden 70s chair">
-                    <div class="info">
-                        <h3 class="item-title">dreamy golden chair</h3>
-                        <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
-                        <p class="price product-info">$650.00</p>
-                        <button class="add-to-cart" data-title="dreamy golden chair" data-price="650.00">Add to
-                            Cart</button>
+                    <!-- dreamy golden chair
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/table4.jpg" alt="round golden 70s chair">
+                        <div class="info">
+                            <h3 class="item-title">dreamy golden chair</h3>
+                            <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
+                            <p class="price product-info">$650.00</p>
+                            <button class="add-to-cart last" data-title="dreamy golden chair" data-price="650.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
-                </div>
-                <!-- dreamy golden chair -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table4.jpg" alt="round golden 70s chair">
-                    <div class="info">
-                        <h3 class="item-title">dreamy golden chair</h3>
-                        <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
-                        <p class="price product-info">$650.00</p>
-                        <button class="add-to-cart" data-title="dreamy golden chair" data-price="650.00">Add to
-                            Cart</button>
-                    </div>
+                dreamy golden chair --
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/table4.jpg" alt="round golden 70s chair">
+                        <div class="info">
+                            <h3 class="item-title">dreamy golden chair</h3>
+                            <p class="product-info">live out your 70s dreams in this soft velvet chair</p>
+                            <p class="price product-info">$650.00</p>
+                            <button class="add-to-cart last" data-title="dreamy golden chair" data-price="650.00">Add to
+                                Cart</button>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <!-- TABLES -->
-        <div class="item-popup mpop">
-            <div class="column-style">
-                <button class="exit button mexit"><i class="fas fa-times"></i></button>
-                <!-- tile top table -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table1.jpg" alt="turquoise tile topped roud table">
-                    <div class="info">
-                        <h3 class="item-title">tile top table</h3>
-                        <p class="product-info">the perfect accent to jazz up the end of your sofa</p>
-                        <p class="price product-info">$115.00</p>
-                        <button class="add-to-cart" data-title="tile top table" data-price="115.00">Add to Cart</button>
+        <div class="popup-container mpop">
+            <div class="item-popup">
+                <div class="column-style">
+                    <button class="exit button mexit"><i class="fas fa-times"></i></button>
+                    <!-- tile top table -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/table1.jpg" alt="turquoise tile topped roud table">
+                        <div class="info">
+                            <h3 class="item-title">tile top table</h3>
+                            <p class="product-info">the perfect accent to jazz up the end of your sofa</p>
+                            <p class="price product-info">$115.00</p>
+                            <button class="add-to-cart last" data-title="tile top table" data-price="115.00">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                    <!-- classic wooden table -->
+                    <!-- <div class="side-by-side">
+                        <img class="image" src="./assets/table2.jpg" alt="simple wooden side table">
+                        <div class="info">
+                            <h3 class="item-title">classic wooden table</h3>
+                            <p class="product-info">the most simple, classic side table</p>
+                            <p class="price product-info">$85.00</p>
+                            <button class="add-to-cart last" data-title="classic wooden table" data-price="85.00">Add to
+                                Cart</button>
+                        </div>
+                    </div> -->
+                    <!-- modern circles table -->
+                    <!-- <div class="side-by-side">
+                        <img class="image" src="./assets/table3.jpg" alt="two round wooden shelves with metal accents">
+                        <div class="info">
+                            <h3 class="item-title">modern circles table</h3>
+                            <p class="product-info">the most simple, modern side table</p>
+                            <p class="price product-info">$125.00</p>
+                            <button class="add-to-cart last" data-title="modern circles table" data-price="125.00">Add to
+                                Cart</button>
+                        </div>
+                    </div> -->
+                    <!-- three points table -->
+                    <div class="side-by-side">
+                        <img class="image" src="./assets/table4.jpg"
+                            alt="simple wooden topped table with three simple pointy legs">
+                        <div class="info">
+                            <h3 class="item-title">three points table</h3>
+                            <p class="product-info">mod tripod table that takes your breath away</p>
+                            <p class="price product-info">$95.00</p>
+                            <button class="add-to-cart last" data-title="three points table" data-price="95.00">Add to
+                                Cart</button>
+                        </div>
                     </div>
                 </div>
-                <!-- classic wooden table -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table2.jpg" alt="simple wooden side table">
-                    <div class="info">
-                        <h3 class="item-title">classic wooden table</h3>
-                        <p class="product-info">the most simple, classic side table</p>
-                        <p class="price product-info">$85.00</p>
-                        <button class="add-to-cart" data-title="classic wooden table" data-price="85.00">Add to
-                            Cart</button>
-                    </div>
-                </div>
-                <!-- modern circles table -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table3.jpg" alt="two round wooden shelves with metal accents">
-                    <div class="info">
-                        <h3 class="item-title">modern circles table</h3>
-                        <p class="product-info">the most simple, modern side table</p>
-                        <p class="price product-info">$125.00</p>
-                        <button class="add-to-cart" data-title="modern circles table" data-price="125.00">Add to
-                            Cart</button>
-                    </div>
-                </div>
-                <!-- three points table -->
-                <div class="side-by-side">
-                    <img class="image" src="./assets/table4.jpg"
-                        alt="simple wooden topped table with three simple pointy legs">
-                    <div class="info">
-                        <h3 class="item-title">three points table</h3>
-                        <p class="product-info">mod tripod table that takes your breath away</p>
-                        <p class="price product-info">$95.00</p>
-                        <button class="add-to-cart" data-title="three points table" data-price="95.00">Add to
-                            Cart</button>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>

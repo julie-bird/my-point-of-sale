@@ -45,7 +45,6 @@ a {
     margin-bottom: auto;
     z-index: 1;
 }
-
 .items {
     border: 1px solid black;
     font-size: 30px;
@@ -61,42 +60,35 @@ a {
   background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
+  border: none;
 }
 .extensions{
   background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -70px;
+  border: none;
 }
 .products {
   background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -140px;
+  border: none;
 }
 .merch {
   background-image: url(./assets/FreshHues1_150-768x843.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -210px;
+  border: none;
 }
-
-.footer {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    width: 85vw;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .button {
   width: 40px;
   height: 40px;
   background: none;
   border: none;
 }
-
 .cart {
   font-size: 20px;
   color: rgb(56, 56, 56);
@@ -111,37 +103,121 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 21;
-  
+  z-index: 21; 
 }
-
-.checkout-deets {
-  width: 60%;
+.last {
+  background-color: #676E60;
   color: white;
-  flex-direction: column;
+  border: none;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 5px 15px;
 }
 .about{
   font-size: 20px;
   color: rgb(56, 56, 56);
 }
+.mpop {
+  display: none;
+}
+.epop {
+  display: none;
+}
+.bpop{
+  display: none;
+}
+.ppop {
+  display: none;
+}
+.popup-container {
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+.item-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  color: #676E60;
+}
+.side-by-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.image {
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ margin: 7px;
+}
 .exit {
   font-size: 20px;
-  color: white;
   position: fixed;
-  right: 1px;
+  right: 40px;
 }
-
-.item-popup {
-  background-color: white;
-  position: absolute;
+.info {
+  color: #676E60;
+  text-align: center;
+}
+.column-style {
+   display: flex;
+   flex-direction: column;
+   /* width: 83vw; */
+   height: 70vh;
+   padding: auto;
+ }
+ .cartItems{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px 10px 0 10px;
+  width: 55%;
+ }
+.payment-method {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+.cexit {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+ .cash-form {
   display: none;
-  /* height: 80vh; */
-  width: 85vw;
-  z-index: 20;
-  left: 50%;
-  top: 57%;
-  transform: translate(-50%,-50%);
-  border-radius: 30px;
+  justify-content: center;
+   align-items: flex-start;
+   width: 90%;
+   flex-wrap: wrap;
+   flex-direction: column;
+ }
+
+ .credit-form {
+   display: none;
+   justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
+ .total_subtotal {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+ }
+.item-title {
+   font-size: 20px;
+   margin: 3px;
 }
 .rpop {
   background-color: rgb(0, 0, 0);
@@ -168,91 +244,9 @@ a {
   left: 10px;
   justify-content: space-between;
 }
-.column-style {
-   display: flex;
-   flex-direction: column;
-   width: 83vw;
-   height: 70vh;
-   padding: auto;
- }
-.checkout-style{
-  background-color: rgba(0, 0, 0, 0.8);
-  /* possibly need to change to fixed, problem with absolute and relative??  */
-  display: flex;
-  position: absolute;
-  height: 80vh;
-  width: 85vw;
-  z-index: 20;
-  left: 50%;
-  top: 57%;
-  transform: translate(-50%,-50%);
-  border-radius: 30px;
-  
-  
- }
- .cartItems{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
- }
-.payment-method {
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-}
-
- .cash-form {
-  display: none;
-  justify-content: center;
-   align-items: flex-start;
-   width: 90%;
-   flex-wrap: wrap;
-   flex-direction: column;
- }
-
- .credit-form {
-   display: none;
-   justify-content: center;
-    align-items: flex-start;
-    width: 90%;
-    flex-wrap: wrap;
-    flex-direction: column;
- }
- .total_subtotal {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
- }
-.info {
-   color: white;
-   text-align: center;
-}
-
-.item-title {
-   font-size: 20px;
-   margin: 3px;
-}
-
 .product-info {
    font-size: 15px;
    margin: 1px;
-}
-
-.side-by-side {
-   display: flex;
-   margin: 20px;
-}
-
-.image {
-  width: 150px;
-  height: auto;
-  /* ^ fix this please! */
-  margin: 7px;
 }
 .credit-paid{
   position: fixed;
@@ -284,6 +278,14 @@ a {
   margin-top: 1px;
     margin-bottom: 1px;
 }
+.receipt-button {
+  background-color: #DF8C71;
+  color: white;
+  border: none;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 5px 15px;
+}
 .amount-taken{
   margin-top: 1px;
     margin-bottom: 1px;
@@ -301,44 +303,31 @@ a {
     }
     .header {
         flex: 1;
-        max-width: 200%;
-        padding-left: 0px;
-        /* background-image: none; */
-        /* background-position: 0px;
-        background-size: fill; */
-        left: 0;
-        transform: translateX(0);
-        background-image: url("./POS_Assets/ZoomLogo.png");
-        background-size: fill;
-        background-repeat: no-repeat;
-        float: left;
-        background-position: center;
+        height: 100vh;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+
     }
     .head {
-        padding-left: 100px;
+        padding-top: 10px;
     }
     .title {
-        padding-top: 75px;
-        font-size: 120px;
+        padding-top: 50px;
+        font-size: 80px;
     }
     .subtitle {
-        font-size: 40px;
+        font-size: 35px;
     }
     .pos {
         flex: 1;
         max-width: 50vw;
         height: 100vh;
-        background-color: #c8ddff;
-       justify-content: center;
-       padding: 100px;
-        /* padding: 20px 0; */
+        justify-content: center;
+        padding: auto;
     }
-    .column-style {
-      display: flex;
-      flex-direction: column;
-      width: 83vw;
-      height: 80vh;
-      padding: auto;
+    .column-style{
+      padding: 30px;
     }
     .receipt{
       width: 100vw;
@@ -351,38 +340,34 @@ a {
      margin-left: 25%;
    }
    .info {
-    color: white;
-    text-align: left;
+    color: #676E60;
+    text-align: center;
    }
-    .footer {
-        /* display: block; */
-        justify-content: flex-end;
-       position: absolute;
-        width: 100vw;
-        left: 0;
-        transform: translateX(0);
-        z-index: 100;
-    }
-    .button {
-        margin-top: 40px;
-    }
     .cart {
         margin-right: 10vw;
         margin-left: 40px;
     }
+    .cartItems {
+      width: 35%;
+    }
     .items {
-        margin-bottom: auto;
-        margin-top: auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-size: 44px;
         min-width: 40vw;
     }
+    .extensions {
+      background-position: 0px -80px;
+    }
+    .products {
+      background-position: 0;
+    }
+    .merch {
+      background-position: 0px -80px;
+    }
     .exit {
       font-size: 20px;
-      color: white;
       position: fixed;
-      right: 1px;
       margin-top:1px;
     }
 }
